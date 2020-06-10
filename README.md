@@ -93,6 +93,8 @@ Base PHP MODELO VISTA CONTROLADOR.
 ```
 **Views/home.php**
 
+> Esto es lo que mostrara el archivo home.php.
+
 ```
 <!DOCTYPE html>
 <html lang="es">
@@ -101,12 +103,14 @@ Base PHP MODELO VISTA CONTROLADOR.
 	<title>Base MVC # Mini Framework 1.0 | JkDev</title>
 </head>
 <body>
- <p>Mini Frameowrk 1.0 - <a href="facebook.com/joaquincetu">JkDev</a>
+ <p>Mini Framework 1.0 - <a href="facebook.com/joaquincetu">JkDev</a>
 </body>
 </html>
 ```
 
-**Al querer crear nueva pagina deben crear un controlador nuevo por ej:**
+**Para agregar una nueva Pagina se debe hacer lo siguiente:**
+
+**Controllers/Nueva.php**
 
 ```
 <?php
@@ -131,3 +135,38 @@ Base PHP MODELO VISTA CONTROLADOR.
 ?>
 ```
 > Recordar que se debe aumentar el ID de la pagina creada.
+
+**Models/Nueva.php**
+
+```
+<?php
+
+	class nuevaModel extends MySQL
+	{
+		
+		public function __construct()
+		{
+			parent::__construct();
+		}
+
+	}
+
+?>
+```
+
+**Views/nueva.php**
+
+> Esto es lo que mostrara el archivo home.php.
+
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Base MVC # Mini Framework 1.0 | JkDev</title>
+</head>
+<body>
+ <p>Mini Framework 1.0 - <a href="facebook.com/joaquincetu">JkDev</a>
+</body>
+</html>
+```
