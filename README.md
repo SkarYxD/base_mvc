@@ -40,4 +40,87 @@ Base PHP MODELO VISTA CONTROLADOR.
 	//Simbolo de moneda (Opcional)
 	const SMONEY = "$";
   ?> 
-  ```
+```
+
+**Controllers/Error.php**
+
+> Controlador para la clase Error404 cuando no se encuentra pagina o busqueda se usara este controlador para luego dar con el archivo en Views/Error404/error.php
+
+```
+<?php
+	class Error404 extends Controllers{
+		public function __construct()
+		{
+			parent::__construct();
+		}
+
+		public function notFound()
+		{
+			$this->views->getView($this,"error");
+		}
+	}
+
+
+	$notFound = new Error404();
+	$notFound->notFound();
+
+?>
+```
+
+**Controllers/Home.php**
+
+> Controlador de la pagína Home/Inicio
+
+```
+<?php
+
+	class Home extends Controllers{
+		public function __construct()
+		{
+			parent::__construct();
+		}
+
+		public function home()
+		{
+			$data['page_id'] = 1;  // Identificador de la pagina
+ 			$data['page_tage'] = "Home";  //Tag Home
+			$data['page_title'] = "Pagina principal";  //Titulo de la pagina Home
+			$data['page_name'] = "home";  //Nombre que se usara para identificar el controlador home
+			$data['page_content'] = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+			$this->views->getView($this,"home",$data); //Llama a la vista home.php dentro de la carpeta Views
+		}
+	}
+
+?>
+```
+
+**Al querer crear nueva pagina deben crear un controlador nuevo por ej:**
+
+```
+<?php
+
+	class Nueva extends Controllers{
+		public function __construct()
+		{
+			parent::__construct();
+		}
+
+		public function nueva()
+		{
+			$data['page_id'] = 2;  // Identificador de la pagina
+ 			$data['page_tage'] = "Nueva";  //Tag Nueva
+			$data['page_title'] = "Pagina principal";  //Titulo de la pagina Nueva
+			$data['page_name'] = "nueva";  //Nombre que se usara para identificar el controlador home
+			$data['page_content'] = "Esta es una nueva pagina.";
+			$this->views->getView($this,"nueva",$data); //Llama a la vista nueva.php dentro de la carpeta Views
+		}
+	}
+
+?>
+```
+> Recordar que se debe aumentar el ID de la pagina creada.
