@@ -42,31 +42,6 @@ Base PHP MODELO VISTA CONTROLADOR.
   ?> 
 ```
 
-**Controllers/Error.php**
-
-> Controlador para la clase Error404 cuando no se encuentra pagina o busqueda se usara este controlador para luego dar con el archivo en Views/Error404/error.php
-
-```
-<?php
-	class Error404 extends Controllers{
-		public function __construct()
-		{
-			parent::__construct();
-		}
-
-		public function notFound()
-		{
-			$this->views->getView($this,"error");
-		}
-	}
-
-
-	$notFound = new Error404();
-	$notFound->notFound();
-
-?>
-```
-
 **Controllers/Home.php**
 
 > Controlador de la pagína Home/Inicio
@@ -97,6 +72,38 @@ Base PHP MODELO VISTA CONTROLADOR.
 	}
 
 ?>
+```
+
+**Models/Home.php**
+
+```
+<?php
+
+	class homeModel extends MySQL
+	{
+		
+		public function __construct()
+		{
+			parent::__construct();
+		}
+
+	}
+
+?>
+```
+**Views/home.php**
+
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Base MVC # Mini Framework 1.0 | JkDev</title>
+</head>
+<body>
+ <p>Mini Frameowrk 1.0 - <a href="facebook.com/joaquincetu">JkDev</a>
+</body>
+</html>
 ```
 
 **Al querer crear nueva pagina deben crear un controlador nuevo por ej:**
