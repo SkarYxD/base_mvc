@@ -39,4 +39,5 @@ Base PHP MODELO VISTA CONTROLADOR.
 
 	//Simbolo de moneda (Opcional)
 	const SMONEY = "$";
-  ?> ```
+  ?> 
+  ```
