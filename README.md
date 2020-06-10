@@ -213,3 +213,13 @@ Base PHP MODELO VISTA CONTROLADOR.
 
 
 ---
+
+## Cuando disponga de tiempo comentare algunos archivos para que sea más fácil su uso.
+**Disculpen las faltas ortograficas**
+
+
+##Pueden visitar mis redes sociales 💙
+
+Facebook: https://www.facebook.com/me/
+Linkedin: https://www.linkedin.com/in/joaquincenturion/
+Instagram: https://www.instagram.com/joaquin_centu/
