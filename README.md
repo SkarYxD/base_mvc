@@ -156,17 +156,21 @@ Base PHP MODELO VISTA CONTROLADOR.
 
 **Views/nueva.php**
 
-> Esto es lo que mostrara el archivo home.php.
+> Esto es lo que mostrara el archivo nueva.php.
 
 ```
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>Base MVC # Mini Framework 1.0 | JkDev</title>
+	<title>NUEVA Base MVC # Mini Framework 1.0 | JkDev</title>
 </head>
 <body>
  <p>Mini Framework 1.0 - <a href="facebook.com/joaquincetu">JkDev</a>
 </body>
 </html>
 ```
+
+Soy una barra separadora
+
+---
