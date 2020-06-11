@@ -220,7 +220,7 @@ Base PHP MODELO VISTA CONTROLADOR.
 
 ##Pueden visitar mis redes sociales 💙
 
-Facebook: https://www.facebook.com/me/
+Facebook: https://www.facebook.com/joaquincentu/
 
 Linkedin: https://www.linkedin.com/in/joaquincenturion/
 
